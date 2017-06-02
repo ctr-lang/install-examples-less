@@ -1,7 +1,7 @@
 # `ctr` Less Install Examples
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ctr-lang/install-examples-Less/blob/master/LICENSE.txt)
-[![wercker status](https://app.wercker.com/status/58d12afb5adcff80bdcd14f9aa4507a0/s/master "wercker status")](https://app.wercker.com/project/byKey/58d12afb5adcff80bdcd14f9aa4507a0)
+[![wercker status](https://app.wercker.com/status/04674f8bff064ff9c1a09f1b3936d880/s/master "wercker status")](https://app.wercker.com/project/byKey/04674f8bff064ff9c1a09f1b3936d880)
 
 
 ## Info
