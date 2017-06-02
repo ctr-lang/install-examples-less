@@ -1,0 +1,60 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #eee;
+  overflow: hidden;
+}
+.body-container {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.body-container > .title {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: flex-end;
+  justify-content: center;
+  width: calc(99.9%);
+}
+.body-container > .title > h1 {
+  font-size: 5em;
+  font-family: monospace;
+}
+.body-container > .title:last-child {
+  margin-right: 0;
+}
+.body-container > .title:nth-child(1n) {
+  float: right;
+  margin-right: 0;
+}
+.body-container > .logo {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: flex-start;
+  justify-content: center;
+  width: calc(99.9%);
+}
+.body-container > .logo:last-child {
+  margin-right: 0;
+}
+.body-container > .logo:nth-child(1n) {
+  float: right;
+  margin-right: 0;
+}
+.body-container > .title > h1:hover {
+  color: #8e44ad;
+  transition-delay: 0s;
+  transition-duration: 2s;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+.body-container > .title > h1:not(:hover) {
+  color: #3498db;
+  transition-delay: 0s;
+  transition-duration: 2s;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+/*# sourceMappingURL=app.css.map*/

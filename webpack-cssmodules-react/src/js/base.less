@@ -1,0 +1,18 @@
+@import "./classes.less";
+//----------------------------------------------------------------------------//
+// -> Base styles
+//----------------------------------------------------------------------------//
+ctr('.container', {
+  position: absolute 0
+  background: '$primary-bg$'
+  grid: {
+    align: 'center'
+  }
+  before: {
+    content: ''
+    position: absolute
+    top: 0
+    size: 15vw
+    background-image: 'url(../img/ctr-logo.svg)'
+  }
+})

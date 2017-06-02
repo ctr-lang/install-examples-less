@@ -1,0 +1,147 @@
+._2cUD6SdfHd550dCoZ-fo8g {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #eee;
+  position: absolute;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+._2cUD6SdfHd550dCoZ-fo8g::before {
+  top: 0;
+  width: 15vw;
+  height: 15vw;
+  content: "";
+  position: absolute;
+  background-image: url(ctr-logo.svg);
+}
+._3HwbNC7crpKbvi18VJhz_9 {
+  margin: 10px;
+  width: 200px;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+.tvN4vXPu5fO6CSIQMUB3P {
+  margin: 10px;
+  overflow: hidden;
+  border: 1px solid #f00;
+}
+._1IiGY-cKY9eidA-ys8pc4e {
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid #00f;
+}
+._1Rw1d_o3c_AwSHTkMp8Is7 {
+  margin: 10px;
+  width: 400px;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+.FRx3a5H0Qmewg0OvGIFUo {
+  margin: 10px;
+  overflow: hidden;
+  border: 1px solid #f00;
+}
+._2a7VeVp0-6AiQskqP3XB2H {
+  float: left;
+  width: 154px;
+  padding: 10px;
+  margin: 10px 0 10px 10px;
+}
+._2a7VeVp0-6AiQskqP3XB2H:hover {
+  background: #ff0;
+  -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 2s;
+     -moz-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-property: background;
+  -o-transition-property: background;
+  -moz-transition-property: background;
+  transition-property: background;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+._2a7VeVp0-6AiQskqP3XB2H:not(:hover) {
+  background: #008080;
+  -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 2s;
+     -moz-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-property: background;
+  -o-transition-property: background;
+  -moz-transition-property: background;
+  transition-property: background;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+._1IAsKwoS1wC7qBXO-cgTQH {
+  float: left;
+  width: 154px;
+  padding: 10px;
+  margin: 10px 0 10px 10px;
+}
+._1IAsKwoS1wC7qBXO-cgTQH:hover {
+  background: #ff0;
+  -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 2s;
+     -moz-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-property: background;
+  -o-transition-property: background;
+  -moz-transition-property: background;
+  transition-property: background;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+._1IAsKwoS1wC7qBXO-cgTQH:not(:hover) {
+  background: #008080;
+  -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 2s;
+     -moz-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-property: background;
+  -o-transition-property: background;
+  -moz-transition-property: background;
+  transition-property: background;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}

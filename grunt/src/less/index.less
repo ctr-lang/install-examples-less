@@ -1,0 +1,111 @@
+
+//------------------------------//
+// Base Body
+//------------------------------//
+ctr('body', {
+  background: '$primary-bg$'
+  position: absolute 0 0 0 0
+  overflow: hidden
+})
+
+//------------------------------//
+// Header
+//------------------------------//
+ctr('header', {
+  background: '$green$'
+  grid: {
+    column: '1/1'
+    container: true
+  }
+  components: {
+    common: {
+      margin: 0
+      grid: {
+        column: '1/1'
+        align: 'center'
+        gutter: 0
+      }
+    }
+    h1: {
+      color: lighten(#f1c40f, 10%)
+      font-size: 3em
+    }
+    h2: {
+      font-size: 4em
+      color: '$primary-bg$'
+      font-family: 'ubuntu'
+    }
+  }
+})
+
+
+//------------------------------//
+// Main index container
+//------------------------------//
+ctr('.container', {
+  $$: {
+    red: #c0392b
+  }
+  grid: {
+    column: '1/1'
+    container: true
+  }
+  components: {
+    common: {
+      grid: {
+        column: '1/1'
+        align: 'center'
+      }
+    }
+    '.who_wrap': {
+      font-size: 3em
+      'comp-h1': {
+        hover: {
+          on: {
+            color: #777
+          }
+          non: {
+            color: '$red$'
+          }
+        }
+      }
+    }
+    '.img_wrap': {
+      'comp-img': {
+        border: 10px solid '$red$'
+        padding: 2em
+        border-radius: 1em
+      }
+    }
+    '.sure_wrap': {
+      font-size: 2em
+      'comp-h3': {
+        color: #a6a6a6
+        'comp-span': {
+          color: '$green$'
+          anim: {
+            name: 'use'
+            count: 'infinite'
+            duration: 2s
+            timeline: {
+              '50%': {
+                color: red
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+})
+
+//------------------------------//
+// ctr logo
+//------------------------------//
+ctr('.ctr-logo', {
+  position: absolute
+  bottom: 0
+  left: 0
+  size: 100px
+  background-image: 'url(../images/ctr-logo.svg)'
+})

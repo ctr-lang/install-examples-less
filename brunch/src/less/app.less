@@ -1,0 +1,43 @@
+//------------------------------//
+// Base body styles
+//------------------------------//
+ctr('body', {
+  background: '$primary-bg$'
+  height: 100vh
+  width: 100vw
+  overflow: hidden
+})
+
+//------------------------------//
+// Main body styles
+//------------------------------//
+ctr('.body-container', {
+  height: 100%
+  grid: {
+    container: true
+  }
+  'comp-.title': {
+    grid: {
+      column: '1/1'
+      align: 'bottom'
+    }
+    'comp-h1': {
+      font-size: 5em
+      font-family: monospace
+      hover: {
+        on: {
+          color: #8e44ad
+        }
+        non: {
+          color: #3498db
+        }
+      }
+    }
+  }
+  'comp-.logo': {
+    grid: {
+      column: '1/1'
+      align: 'top'
+    }
+  }
+})

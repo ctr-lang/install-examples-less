@@ -1,0 +1,25 @@
+//----------------------------------------------------------------------------//
+// -> Span Loader Animation
+//----------------------------------------------------------------------------//
+ctrSetClass('SpanAnimation', {
+  $$: {
+    color: gray
+    duration: 4s
+    delay: 0s
+    prefix: '__hash__'
+  }
+  animation: {
+    // Normally you would just keep the default
+    // hash value but since we have to test the output
+    // a hash value proves to be problematic
+    name: 'SpanAnimation-_$prefix$_'
+    count: infinite
+    duration: '_$duration$_'
+    delay: '_$delay$_'
+    timeline: {
+      '50%': {
+        color: '_$color$_'
+      }
+    }
+  }
+})

@@ -1,0 +1,46 @@
+{
+  "name": "ctr-gulp-install",
+  "version": "0.4.0",
+  "description": "Gulpin at all hours with ctr",
+  "license": "MIT",
+  "author": "te schultz",
+  "homepage": "https://ctr-lang.com",
+  "keywords": [
+    "boilerplate",
+    "ctr",
+    "gulp",
+    "setup"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctr-lang/install-examples-less/tree/master/brunch"
+  },
+  "bugs": {
+    "url": "https://github.com/ctr-lang/install-examples-less/issues"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "build:test": "yarn run build",
+    "dev": "gulp",
+    "setup": "yarn install --ignore-engines",
+    "test": "yarn run build:test && mocha __tests__/ --colors --bail",
+    "update": "ncu --upgradeAll --packageFile package.json",
+    "update:check": "ncu --packageFile package.json",
+    "update:install": "yarn run update && yarn run setup"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "6.24.1",
+    "browser-sync": "2.18.12",
+    "ctr": "0.4.0",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "4.0.0",
+    "gulp-babel": "6.1.2",
+    "gulp-imagemin": "3.2.0",
+    "gulp-less": "3.3.0",
+    "gulp-watch": "4.3.11",
+    "less-plugin-glob": "2.0.0",
+    "mocha": "3.4.2",
+    "npm-check-updates": "2.11.2",
+    "should": "11.2.1"
+  }
+}

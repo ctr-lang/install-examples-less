@@ -1,0 +1,53 @@
+//----------------------------------------------------------------------------//
+// -> Main index title container | Gulpin` ctr + bounce anim
+//----------------------------------------------------------------------------//
+ctr('.title-container', {
+  position: absolute 20% 30%
+  border-width: 2em
+  border-style: solid
+  hover: {
+    on: {
+      border-color: #2980b9
+    }
+    non: {
+      border-color: 'alpha($primary-bg$, 90%)'
+    }
+  }
+  components: {
+    common: {
+      font-size: 3em
+      'comp-h1': {
+        margin: 0
+      }
+    }
+    '.top-wrap': {
+      color: alpha(#2ecc71, 75%)
+      alignSelf: 'top'
+      'extend-TitleTextAnimation': {
+        prefix: 'top-wrap'
+      }
+    }
+    '.bottom-wrap': {
+      color: alpha(#2ecc71, 75%)
+      alignSelf: 'bottom'
+      extend-TitleTextAnimation: {
+        delay: 2.5s
+        prefix: 'bottom-wrap'
+      }
+    }
+  }
+  'comp-.bounce-wrap': {
+    height: 30vh
+    alignSelf: 'center'
+    top: 40%
+    'comp-.bounce': {
+      'extend-SingleBounce': {
+        color: #c0392b
+        height: 12em
+        prefix: 'bounce-wrap'
+      }
+    }
+  }
+})
+
+

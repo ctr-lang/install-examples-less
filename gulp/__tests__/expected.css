@@ -1,0 +1,406 @@
+body {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+  background: #bdc3c7;
+}
+.ctr-logo {
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+.ctr-logo::before {
+  top: 0;
+  left: 0;
+  width: 10vw;
+  height: 10vw;
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  background-image: url("ctr-logo.svg");
+}
+.ctr-logo::after {
+  top: 0;
+  right: 0;
+  width: 10vw;
+  height: 10vw;
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  background-image: url("ctr-logo.svg");
+}
+body > .thumbs-up-top {
+  left: 50%;
+  top: -50px;
+  right: auto;
+  width: 10vw;
+  bottom: auto;
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+body > .thumbs-up-bottom {
+  left: 50%;
+  top: auto;
+  right: auto;
+  width: 10vw;
+  bottom: -50px;
+  position: absolute;
+  -webkit-transform: scaleY(-1) scaleX(-1) translateX(5vw) rotate(90deg);
+     -moz-transform: scaleY(-1) scaleX(-1) translateX(5vw) rotate(90deg);
+      -ms-transform: scaleY(-1) scaleX(-1) translateX(5vw) rotate(90deg);
+       -o-transform: scaleY(-1) scaleX(-1) translateX(5vw) rotate(90deg);
+          transform: scaleY(-1) scaleX(-1) translateX(5vw) rotate(90deg);
+}
+.title-container {
+  top: 20%;
+  left: 30%;
+  right: 30%;
+  bottom: 20%;
+  border-width: 2em;
+  position: absolute;
+  border-style: solid;
+}
+.title-container:hover {
+  -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  border-color: #2980b9;
+  -webkit-transition-duration: 2s;
+     -moz-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-property: border-color;
+  -o-transition-property: border-color;
+  -moz-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+.title-container:not(:hover) {
+  -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 2s;
+     -moz-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+  border-color: rgba(238, 238, 238, 0.9);
+  -webkit-transition-property: border-color;
+  -o-transition-property: border-color;
+  -moz-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+.title-container > .top-wrap {
+  top: 0;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  font-size: 3em;
+  position: absolute;
+  -webkit-animation-delay: 0s;
+     -moz-animation-delay: 0s;
+       -o-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: none;
+     -moz-animation-fill-mode: none;
+       -o-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal;
+     -moz-animation-direction: normal;
+       -o-animation-direction: normal;
+          animation-direction: normal;
+  color: rgba(46, 204, 113, 0.75);
+  -webkit-animation-play-state: running;
+     -moz-animation-play-state: running;
+       -o-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-transform: translate(-50%, 0);
+     -moz-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+       -o-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-animation-name: gulpin-top-wrap;
+     -moz-animation-name: gulpin-top-wrap;
+       -o-animation-name: gulpin-top-wrap;
+          animation-name: gulpin-top-wrap;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+.title-container > .bottom-wrap {
+  bottom: 0;
+  left: 50%;
+  top: auto;
+  right: auto;
+  font-size: 3em;
+  position: absolute;
+  -webkit-animation-delay: 2.5s;
+     -moz-animation-delay: 2.5s;
+       -o-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: none;
+     -moz-animation-fill-mode: none;
+       -o-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal;
+     -moz-animation-direction: normal;
+       -o-animation-direction: normal;
+          animation-direction: normal;
+  color: rgba(46, 204, 113, 0.75);
+  -webkit-animation-play-state: running;
+     -moz-animation-play-state: running;
+       -o-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-transform: translate(-50%, 0);
+     -moz-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+       -o-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-animation-name: gulpin-bottom-wrap;
+     -moz-animation-name: gulpin-bottom-wrap;
+       -o-animation-name: gulpin-bottom-wrap;
+          animation-name: gulpin-bottom-wrap;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+.title-container > .bounce-wrap {
+  top: 40%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  height: 30vh;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.title-container > .top-wrap > h1 {
+  margin: 0;
+}
+.title-container > .bottom-wrap > h1 {
+  margin: 0;
+}
+.title-container > .bounce-wrap > .bounce {
+  width: 5em;
+  height: 42em;
+  -webkit-animation-delay: 0s;
+     -moz-animation-delay: 0s;
+       -o-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 3s;
+     -moz-animation-duration: 3s;
+       -o-animation-duration: 3s;
+          animation-duration: 3s;
+  background: transparent;
+  -webkit-animation-fill-mode: none;
+     -moz-animation-fill-mode: none;
+       -o-animation-fill-mode: none;
+          animation-fill-mode: none;
+  background-repeat: no-repeat;
+  -webkit-animation-play-state: running;
+     -moz-animation-play-state: running;
+       -o-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-direction: alternate;
+     -moz-animation-direction: alternate;
+       -o-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-background-size: 6em 6em, 7em 5em;
+     -moz-background-size: 6em 6em, 7em 5em;
+       -o-background-size: 6em 6em, 7em 5em;
+          background-size: 6em 6em, 7em 5em;
+  image-rendering: optimize-contrast;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: SingleBounce-bounce-wrap;
+     -moz-animation-name: SingleBounce-bounce-wrap;
+       -o-animation-name: SingleBounce-bounce-wrap;
+          animation-name: SingleBounce-bounce-wrap;
+  background-position: 50% 50%, 50% -webkit-calc(50.7%);
+  background-position: 50% 50%, 50% -moz-calc(50.7%);
+  background-position: 50% 50%, 50% calc(50.7%);
+  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  background-image: -webkit-radial-gradient(#c0392b 30%, transparent 35%), -webkit-radial-gradient(rgba(0, 0, 0, 0.1), transparent 15%);
+  background-image: -moz-radial-gradient(#c0392b 30%, transparent 35%), -moz-radial-gradient(rgba(0, 0, 0, 0.1), transparent 15%);
+  background-image: -o-radial-gradient(#c0392b 30%, transparent 35%), -o-radial-gradient(rgba(0, 0, 0, 0.1), transparent 15%);
+  background-image: radial-gradient(#c0392b 30%, transparent 35%), radial-gradient(rgba(0, 0, 0, 0.1), transparent 15%);
+}
+@-webkit-keyframes gulpin-top-wrap {
+  50% {
+    color: rgba(155, 89, 182, 0.75);
+  }
+}
+@-moz-keyframes gulpin-top-wrap {
+  50% {
+    color: rgba(155, 89, 182, 0.75);
+  }
+}
+@-o-keyframes gulpin-top-wrap {
+  50% {
+    color: rgba(155, 89, 182, 0.75);
+  }
+}
+@keyframes gulpin-top-wrap {
+  50% {
+    color: rgba(155, 89, 182, 0.75);
+  }
+}
+@-webkit-keyframes gulpin-bottom-wrap {
+  50% {
+    color: rgba(155, 89, 182, 0.75);
+  }
+}
+@-moz-keyframes gulpin-bottom-wrap {
+  50% {
+    color: rgba(155, 89, 182, 0.75);
+  }
+}
+@-o-keyframes gulpin-bottom-wrap {
+  50% {
+    color: rgba(155, 89, 182, 0.75);
+  }
+}
+@keyframes gulpin-bottom-wrap {
+  50% {
+    color: rgba(155, 89, 182, 0.75);
+  }
+}
+@-webkit-keyframes SingleBounce-bounce-wrap {
+  0% {
+    background-position: 50% -webkit-calc(28%), 50% -webkit-calc(50.35%);
+    background-position: 50% calc(28%), 50% calc(50.35%);
+  }
+  42% {
+    background-position: 50% 50%, 50% -webkit-calc(50.7%);
+    background-position: 50% 50%, 50% calc(50.7%);
+  }
+  45% {
+    -webkit-background-size: 6em 1em, 25em 5em;
+            background-size: 6em 1em, 25em 5em;
+    background-position: 50% 50%, 50% -webkit-calc(50.7%);
+    background-position: 50% 50%, 50% calc(50.7%);
+  }
+  48% {
+    background-position: 50% 50%, 50% -webkit-calc(50.7%);
+    background-position: 50% 50%, 50% calc(50.7%);
+  }
+  100% {
+    background-position: 50% -webkit-calc(38%), 50% -webkit-calc(50.7%);
+    background-position: 50% calc(38%), 50% calc(50.7%);
+  }
+}
+@-moz-keyframes SingleBounce-bounce-wrap {
+  0% {
+    background-position: 50% -moz-calc(28%), 50% -moz-calc(50.35%);
+    background-position: 50% calc(28%), 50% calc(50.35%);
+  }
+  42% {
+    background-position: 50% 50%, 50% -moz-calc(50.7%);
+    background-position: 50% 50%, 50% calc(50.7%);
+  }
+  45% {
+    -moz-background-size: 6em 1em, 25em 5em;
+         background-size: 6em 1em, 25em 5em;
+    background-position: 50% 50%, 50% -moz-calc(50.7%);
+    background-position: 50% 50%, 50% calc(50.7%);
+  }
+  48% {
+    background-position: 50% 50%, 50% -moz-calc(50.7%);
+    background-position: 50% 50%, 50% calc(50.7%);
+  }
+  100% {
+    background-position: 50% -moz-calc(38%), 50% -moz-calc(50.7%);
+    background-position: 50% calc(38%), 50% calc(50.7%);
+  }
+}
+@-o-keyframes SingleBounce-bounce-wrap {
+  0% {
+    background-position: 50% calc(28%), 50% calc(50.35%);
+  }
+  42% {
+    background-position: 50% 50%, 50% calc(50.7%);
+  }
+  45% {
+    -o-background-size: 6em 1em, 25em 5em;
+       background-size: 6em 1em, 25em 5em;
+    background-position: 50% 50%, 50% calc(50.7%);
+  }
+  48% {
+    background-position: 50% 50%, 50% calc(50.7%);
+  }
+  100% {
+    background-position: 50% calc(38%), 50% calc(50.7%);
+  }
+}
+@keyframes SingleBounce-bounce-wrap {
+  0% {
+    background-position: 50% -webkit-calc(28%), 50% -webkit-calc(50.35%);
+    background-position: 50% -moz-calc(28%), 50% -moz-calc(50.35%);
+    background-position: 50% calc(28%), 50% calc(50.35%);
+  }
+  42% {
+    background-position: 50% 50%, 50% -webkit-calc(50.7%);
+    background-position: 50% 50%, 50% -moz-calc(50.7%);
+    background-position: 50% 50%, 50% calc(50.7%);
+  }
+  45% {
+    -webkit-background-size: 6em 1em, 25em 5em;
+       -moz-background-size: 6em 1em, 25em 5em;
+         -o-background-size: 6em 1em, 25em 5em;
+            background-size: 6em 1em, 25em 5em;
+    background-position: 50% 50%, 50% -webkit-calc(50.7%);
+    background-position: 50% 50%, 50% -moz-calc(50.7%);
+    background-position: 50% 50%, 50% calc(50.7%);
+  }
+  48% {
+    background-position: 50% 50%, 50% -webkit-calc(50.7%);
+    background-position: 50% 50%, 50% -moz-calc(50.7%);
+    background-position: 50% 50%, 50% calc(50.7%);
+  }
+  100% {
+    background-position: 50% -webkit-calc(38%), 50% -webkit-calc(50.7%);
+    background-position: 50% -moz-calc(38%), 50% -moz-calc(50.7%);
+    background-position: 50% calc(38%), 50% calc(50.7%);
+  }
+}

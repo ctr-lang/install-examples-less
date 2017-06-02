@@ -1,0 +1,26 @@
+//----------------------------------------------------------------------------//
+// -> TitleTextAnimation Class
+//    Single color animation for text
+//----------------------------------------------------------------------------//
+ctrSetClass('TitleTextAnimation', {
+  $$: {
+    color: #9b59b6
+    duration: 5s
+    delay: 0s,
+    prefix: '__hash__'
+  }
+  animation: {
+    // Normally you would just keep the default
+    // hash value but since we have to test the output
+    // a hash value proves to be problematic
+    name: 'gulpin-_$prefix$_'
+    count: infinite
+    duration: '_$duration$_'
+    delay: '_$delay$_'
+    timeline: {
+      '50%': {
+        color: 'alpha(_$color$_, 75%)'
+      }
+    }
+  }
+})

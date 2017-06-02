@@ -1,0 +1,25 @@
+//----------------------------------------------------------------------------//
+// -> ctr logo | corrnored at l, r
+//----------------------------------------------------------------------------//
+ctr('.ctr-logo', {
+  position: absolute
+  left: 0
+  right: 0
+  elements: {
+    common: {
+      content: false
+      position: absolute
+      top: 0
+      size: 10vw
+      background-image: url(./ctr-logo.svg)
+      opacity: 0.5
+    }
+    before: {
+      left: 0
+    }
+    after: {
+      right: 0
+    }
+  }
+})
+

@@ -1,0 +1,27 @@
+//----------------------------------------------------------------------------//
+// -> Thumbs up, brah
+//----------------------------------------------------------------------------//
+ctr('body', {
+  components: {
+    common: {
+      position: absolute
+      width: 10vw
+      transform: {
+        rotate: 90deg
+      }
+    }
+    '.thumbs-up-top': {
+      alignSelf: 'top'
+      top: -50px
+    }
+    '.thumbs-up-bottom': {
+      alignSelf: 'bottom'
+      bottom: -50px
+      transform: {
+        scaleY: -1
+        scaleX: -1
+        translateX: 5vw
+      }
+    }
+  }
+})

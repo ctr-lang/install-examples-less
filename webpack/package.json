@@ -1,0 +1,55 @@
+{
+  "name": "ctr-install-webpack",
+  "version": "0.4.0",
+  "description": "Packin the web with ctr and webpack",
+  "license": "MIT",
+  "author": "te schultz",
+  "homepage": "https://ctr-lang.com",
+  "keywords": [
+    "boilerplate",
+    "ctr",
+    "setup",
+    "webpack"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctr-lang/install-examples-less/tree/master/webpack"
+  },
+  "bugs": {
+    "url": "https://github.com/ctr-lang/install-examples-less/issues"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "build:test": "webpack",
+    "dev": "webpack-dev-server --progress --colors",
+    "setup": "yarn install --ignore-engines",
+    "test": "yarn run build:test && mocha __tests__/ --colors --bail",
+    "update": "ncu --upgradeAll --packageFile package.json",
+    "update:check": "ncu --packageFile package.json",
+    "update:install": "yarn run update && yarn run setup"
+  },
+  "devDependencies": {
+    "autoprefixer": "7.1.1",
+    "babel-core": "6.24.1",
+    "babel-loader": "7.0.0",
+    "babel-preset-es2015": "6.24.1",
+    "browser-sync": "2.18.12",
+    "browser-sync-webpack-plugin": "1.1.4",
+    "clean-webpack-plugin": "0.1.16",
+    "css-loader": "0.28.4",
+    "ctr": "0.4.0",
+    "extract-text-webpack-plugin": "2.1.0",
+    "file-loader": "0.11.1",
+    "html-webpack-plugin": "2.28.0",
+    "image-webpack-loader": "3.3.1",
+    "less": "3.0.0-pre.4",
+    "less-loader": "4.0.3",
+    "mocha": "3.4.2",
+    "npm-check-updates": "2.11.2",
+    "postcss-loader": "2.0.5",
+    "should": "11.2.1",
+    "style-loader": "0.18.1",
+    "webpack": "2.6.1",
+    "webpack-dev-server": "2.4.5"
+  }
+}

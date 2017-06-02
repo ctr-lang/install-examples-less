@@ -1,0 +1,63 @@
+//----------------------------------------------------------------------------//
+// -> SingleBounce Class
+//    A 2D ball bouncing loader with a shadow to make the crowd go "whoa"
+//----------------------------------------------------------------------------//
+ctrSetClass('SingleBounce', {
+  $$: {
+    //circle size
+    size: 5em
+    //Y axis bound
+    height: 10em
+    //bottom shadow radial growth
+    shadowMax: 5
+    duration: 3s
+    color: #3498db
+    ease: default
+    type: 'em',
+    prefix: '__hash__'
+    eval: {
+      height: 'arith($height$ * 3.5)$type$'
+      one: 'arith($size$ + 1)$type$'
+      two: 'arith($size$ + 2)$type$'
+      shadowRadial: 'arith($size$ * $shadowMax$)$type$'
+      shadow: 'arith($eval.two$ * 0.10)$type$'
+      shadowBottomMove: 'arith($eval.shadow$ - ($eval.shadow$ / 2))$type$'
+    }
+  }
+  height: '_$eval.height$_'
+  width: '_$size$_'
+  background: transparent
+  background-image: 'radial-gradient(_$color$_ 30%, transparent 35%), radial-gradient(hsla(0,0%,0%,.1),transparent 15%)'
+  background-position: '50% 50%, 50% calc(50% + _$eval.shadow$_)'
+  background-size: '_$eval.one$_ _$eval.one$_, _$eval.two$_ _$size$_'
+  background-repeat: no-repeat
+  image-rendering: optimize-contrast
+  animation: {
+    // Normally you would just keep the default
+    // hash value but since we have to test the output
+    // a hash value proves to be problematic
+    name: 'SingleBounce-_$prefix$_'
+    count: infinite
+    duration: '_$duration$_'
+    direction: alternate
+    ease: '_$ease$_'
+    timeline: {
+      '0%': {
+        background-position: '50% calc(40% - _$height$_), 50% calc(50% + _$eval.shadowBottomMove$_)'
+      }
+      '42%': {
+        background-position: '50% 50%, 50% calc(50% + _$eval.shadow$_)'
+      }
+      '45%': {
+        background-position: '50% 50%, 50% calc(50% + _$eval.shadow$_)'
+        background-size: '_$eval.one$_ 1em, _$eval.shadowRadial$_ _$size$_'
+      }
+      '48%': {
+        background-position: '50% 50%, 50% calc(50% + _$eval.shadow$_)'
+      }
+      '100%': {
+        background-position: '50% calc(50% - _$height$_), 50% calc(50% + _$eval.shadow$_)'
+      }
+    }
+  }
+})

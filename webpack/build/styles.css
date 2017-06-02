@@ -1,0 +1,353 @@
+body {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #eee;
+  overflow: hidden;
+  position: absolute;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.index-container {
+  width: 75vw;
+  height: 75vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.index-container > .img-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: -webkit-calc(67.425%);
+  height: -moz-calc(67.425%);
+  height: calc(67.425%);
+}
+.index-container > .title-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: -webkit-calc(2.475%);
+  height: -moz-calc(2.475%);
+  height: calc(2.475%);
+}
+.index-container > .title-container > h1 > span {
+  color: #eee;
+  font-size: 10vw;
+  font-family: monospace;
+}
+.index-container > .title-container:last-child {
+  margin-bottom: 0;
+}
+.index-container > .img-container > img {
+  width: 100%;
+  height: 100%;
+}
+.index-container > .img-container::before {
+  top: 4vw;
+  width: 11vw;
+  height: 11vw;
+  content: "";
+  position: absolute;
+  -webkit-animation-delay: 0s;
+     -moz-animation-delay: 0s;
+       -o-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 8s;
+     -moz-animation-duration: 8s;
+       -o-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-name: tester;
+     -moz-animation-name: tester;
+       -o-animation-name: tester;
+          animation-name: tester;
+  -webkit-animation-fill-mode: none;
+     -moz-animation-fill-mode: none;
+       -o-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+     -moz-animation-play-state: running;
+       -o-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-direction: alternate;
+     -moz-animation-direction: alternate;
+       -o-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  background-image: url(ctr-logo.svg);
+  -webkit-filter: drop-shadow(0px 400px 10px rgba(255, 64, 0, 0.69));
+          filter: drop-shadow(0px 400px 10px rgba(255, 64, 0, 0.69));
+  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+.index-container > .img-container:last-child {
+  margin-bottom: 0;
+}
+.index-container > .title-container > h1 > span:first-child {
+  -webkit-animation-delay: 0s;
+     -moz-animation-delay: 0s;
+       -o-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 4s;
+     -moz-animation-duration: 4s;
+       -o-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: none;
+     -moz-animation-fill-mode: none;
+       -o-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal;
+     -moz-animation-direction: normal;
+       -o-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-play-state: running;
+     -moz-animation-play-state: running;
+       -o-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-name: SpanAnimation-first;
+     -moz-animation-name: SpanAnimation-first;
+       -o-animation-name: SpanAnimation-first;
+          animation-name: SpanAnimation-first;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+.index-container > .title-container > h1 > span:last-child {
+  -webkit-animation-delay: 2s;
+     -moz-animation-delay: 2s;
+       -o-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 4s;
+     -moz-animation-duration: 4s;
+       -o-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: none;
+     -moz-animation-fill-mode: none;
+       -o-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal;
+     -moz-animation-direction: normal;
+       -o-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-play-state: running;
+     -moz-animation-play-state: running;
+       -o-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-name: SpanAnimation-last;
+     -moz-animation-name: SpanAnimation-last;
+       -o-animation-name: SpanAnimation-last;
+          animation-name: SpanAnimation-last;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+@-webkit-keyframes tester {
+  0% {
+    -webkit-filter: drop-shadow(0px 400px 5px rgba(255, 64, 0, 0.69));
+            filter: drop-shadow(0px 400px 5px rgba(255, 64, 0, 0.69));
+  }
+  25% {
+    -webkit-filter: drop-shadow(-400px 0px 5px rgba(255, 0, 251, 0.69));
+            filter: drop-shadow(-400px 0px 5px rgba(255, 0, 251, 0.69));
+  }
+  50% {
+    -webkit-filter: drop-shadow(0px -400px 5px rgba(0, 132, 255, 0.69));
+            filter: drop-shadow(0px -400px 5px rgba(0, 132, 255, 0.69));
+  }
+  75% {
+    -webkit-filter: drop-shadow(400px 0px 5px rgba(0, 255, 25, 0.69));
+            filter: drop-shadow(400px 0px 5px rgba(0, 255, 25, 0.69));
+  }
+  100% {
+    -webkit-filter: drop-shadow(0px 400px 10px rgba(255, 64, 0, 0.69));
+            filter: drop-shadow(0px 400px 10px rgba(255, 64, 0, 0.69));
+  }
+}
+@-moz-keyframes tester {
+  0% {
+    filter: drop-shadow(0px 400px 5px rgba(255, 64, 0, 0.69));
+  }
+  25% {
+    filter: drop-shadow(-400px 0px 5px rgba(255, 0, 251, 0.69));
+  }
+  50% {
+    filter: drop-shadow(0px -400px 5px rgba(0, 132, 255, 0.69));
+  }
+  75% {
+    filter: drop-shadow(400px 0px 5px rgba(0, 255, 25, 0.69));
+  }
+  100% {
+    filter: drop-shadow(0px 400px 10px rgba(255, 64, 0, 0.69));
+  }
+}
+@-o-keyframes tester {
+  0% {
+    filter: drop-shadow(0px 400px 5px rgba(255, 64, 0, 0.69));
+  }
+  25% {
+    filter: drop-shadow(-400px 0px 5px rgba(255, 0, 251, 0.69));
+  }
+  50% {
+    filter: drop-shadow(0px -400px 5px rgba(0, 132, 255, 0.69));
+  }
+  75% {
+    filter: drop-shadow(400px 0px 5px rgba(0, 255, 25, 0.69));
+  }
+  100% {
+    filter: drop-shadow(0px 400px 10px rgba(255, 64, 0, 0.69));
+  }
+}
+@keyframes tester {
+  0% {
+    -webkit-filter: drop-shadow(0px 400px 5px rgba(255, 64, 0, 0.69));
+            filter: drop-shadow(0px 400px 5px rgba(255, 64, 0, 0.69));
+  }
+  25% {
+    -webkit-filter: drop-shadow(-400px 0px 5px rgba(255, 0, 251, 0.69));
+            filter: drop-shadow(-400px 0px 5px rgba(255, 0, 251, 0.69));
+  }
+  50% {
+    -webkit-filter: drop-shadow(0px -400px 5px rgba(0, 132, 255, 0.69));
+            filter: drop-shadow(0px -400px 5px rgba(0, 132, 255, 0.69));
+  }
+  75% {
+    -webkit-filter: drop-shadow(400px 0px 5px rgba(0, 255, 25, 0.69));
+            filter: drop-shadow(400px 0px 5px rgba(0, 255, 25, 0.69));
+  }
+  100% {
+    -webkit-filter: drop-shadow(0px 400px 10px rgba(255, 64, 0, 0.69));
+            filter: drop-shadow(0px 400px 10px rgba(255, 64, 0, 0.69));
+  }
+}
+@-webkit-keyframes SpanAnimation-first {
+  50% {
+    color: #3498db;
+  }
+}
+@-moz-keyframes SpanAnimation-first {
+  50% {
+    color: #3498db;
+  }
+}
+@-o-keyframes SpanAnimation-first {
+  50% {
+    color: #3498db;
+  }
+}
+@keyframes SpanAnimation-first {
+  50% {
+    color: #3498db;
+  }
+}
+@-webkit-keyframes SpanAnimation-last {
+  50% {
+    color: #c0392b;
+  }
+}
+@-moz-keyframes SpanAnimation-last {
+  50% {
+    color: #c0392b;
+  }
+}
+@-o-keyframes SpanAnimation-last {
+  50% {
+    color: #c0392b;
+  }
+}
+@keyframes SpanAnimation-last {
+  50% {
+    color: #c0392b;
+  }
+}
+body > .thumbs-up-left {
+  left: -10px;
+  height: 25vw;
+  position: absolute;
+}
+body > .thumbs-up-right {
+  height: 25vw;
+  right: -10px;
+  position: absolute;
+  -webkit-transform: scaleX(-1);
+     -moz-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+       -o-transform: scaleX(-1);
+          transform: scaleX(-1);
+}

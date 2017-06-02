@@ -1,0 +1,11 @@
+# This is the .ctrrc - it sets global
+# options and variables to be used in the
+# project.
+# Docs: https://docs.ctr-lang.com/helpers/dot-ctrrc/
+
+variable:
+  primary-bg: '#eee'
+
+option:
+  hover:
+    duration: 2s

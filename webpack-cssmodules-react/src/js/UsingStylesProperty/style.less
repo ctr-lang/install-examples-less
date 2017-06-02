@@ -1,0 +1,27 @@
+//----------------------------------------------------------------------------//
+// -> These styles are using classes defined in Style-Classes.ctr.less
+//----------------------------------------------------------------------------//
+ctr('.table', {
+  'extend-Table': {
+    width: 400px
+  }
+})
+
+ctr('.row', {
+  extend: 'Row'
+})
+
+ctr('.cell', {
+  float: left
+  width: 154px
+  padding: 10px
+  margin: 10px 0 10px 10px
+  hover: {
+    on: {
+      background: yellow
+    }
+    non: {
+      background: teal
+    }
+  }
+})
